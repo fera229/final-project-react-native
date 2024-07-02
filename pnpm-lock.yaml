@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@upleveled/ley':
+        specifier: ^0.8.6
+        version: 0.8.6
       dotenv-safe:
         specifier: ^9.1.0
         version: 9.1.0(dotenv@16.4.5)
@@ -29,9 +32,6 @@ importers:
       expo-status-bar:
         specifier: ~1.12.1
         version: 1.12.1
-      ley:
-        specifier: ^0.8.1
-        version: 0.8.1
       nativewind:
         specifier: ^2.0.11
         version: 2.0.11(react@18.2.0)(tailwindcss@3.3.2)
@@ -50,6 +50,9 @@ importers:
       react-native-screens:
         specifier: ^3.31.1
         version: 3.31.1(react-native@0.74.2(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@types/react@18.2.79)(encoding@0.1.13)(react@18.2.0))(react@18.2.0)
+      tsx:
+        specifier: ^4.16.0
+        version: 4.16.0
     devDependencies:
       '@babel/core':
         specifier: ^7.20.0
@@ -1693,6 +1696,11 @@ packages:
   '@typescript-eslint/visitor-keys@8.0.0-alpha.34':
     resolution: {integrity: sha512-Zs84EZx55fusxi4+6bzdZyNLy6nN8snh7HOcgs1jiRkqmf0qo+cgPjb7mGA1RgE1m60FQYgesj7je9KBE0HfSA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@upleveled/ley@0.8.6':
+    resolution: {integrity: sha512-FqFhvC85XRsAxr2B3Z8s0lcRmr+tnA0V4lebrM5rfgsXpxI0PFfH41KyPEQDFl//sKjQSyDmX3P0BUnfhL/+NQ==}
+    engines: {node: '>= 8'}
+    hasBin: true
 
   '@urql/core@2.3.6':
     resolution: {integrity: sha512-PUxhtBh7/8167HJK6WqBv6Z0piuiaZHQGYbhwpNL9aIQmLROPEdaUYkY4wh45wPQXcTpnd11l0q3Pw+TI11pdw==}
@@ -3686,11 +3694,6 @@ packages:
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
-
-  ley@0.8.1:
-    resolution: {integrity: sha512-8Nd5uzie4PxiEJcQNv5YL1IQCMzye/0sE8VPB4KczJkyd44NfDyK/7Vbmp9eHYt+dJ4hxaXy+gF4DORSxYGArg==}
-    engines: {node: '>= 8'}
-    hasBin: true
 
   libpg-query@15.2.0-rc.deparse.3:
     resolution: {integrity: sha512-e8OPjGPqy3H+rSdwQigkeibSIE6WMU4yyYZErPNgHeyZHcRGOuNSuSx0ifJhgVl7JkapVHtSau2ZCl3g65RTRg==}
@@ -8111,6 +8114,13 @@ snapshots:
       '@typescript-eslint/types': 8.0.0-alpha.34
       eslint-visitor-keys: 3.4.3
 
+  '@upleveled/ley@0.8.6':
+    dependencies:
+      kleur: 4.1.5
+      mk-dirs: 3.0.0
+      sade: 1.8.1
+      totalist: 2.0.0
+
   '@urql/core@2.3.6(graphql@15.8.0)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@15.8.0)
@@ -10418,13 +10428,6 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
       type-check: 0.4.0
-
-  ley@0.8.1:
-    dependencies:
-      kleur: 4.1.5
-      mk-dirs: 3.0.0
-      sade: 1.8.1
-      totalist: 2.0.0
 
   libpg-query@15.2.0-rc.deparse.3(encoding@0.1.13):
     dependencies:
