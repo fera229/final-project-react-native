@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customColor: '#0D2329',
+        customBackground: '#0D2329',
+        customPrimary: '#05664F',
+        customSecondary: '#14EDB9',
+        customText: '#FFFFFF',
       },
     },
   },
